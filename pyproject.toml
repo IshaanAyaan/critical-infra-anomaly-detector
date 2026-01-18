@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infra-anomdet"
+version = "0.1.0"
+description = "Critical infrastructure anomaly detection pipeline (defensive)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ciad = "infra_anomdet.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
