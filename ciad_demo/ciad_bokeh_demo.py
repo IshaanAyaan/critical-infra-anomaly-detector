@@ -1194,7 +1194,7 @@ def tick():
         "lstm": [scores["lstm"]],
         "iforest": [scores["if"]],
         "alert": [1 if in_alert else 0],
-    }, rollover=600)
+    }, rollover=500)
 
     # contributions plot update (only after calibration)
     if not demo.calibrating:
@@ -1204,7 +1204,7 @@ def tick():
     # key sensor plot (scaled)
     if demo.pre.is_fitted:
         x_scaled = demo.pre.transform(np.array([out["values"][k] for k in SENSOR_NAMES], dtype=np.float32))
-        key_plot_source.stream({"t": [t], **{k: [float(x_scaled[NAME_TO_IDX[k]])] for k in key_tags}}, rollover=600)
+        key_plot_source.stream({"t": [t], **{k: [float(x_scaled[NAME_TO_IDX[k]])] for k in key_tags}}, rollover=500)
 
     # new alert events
     closed: Optional[AlertEvent] = out.get("closed_event", None)
