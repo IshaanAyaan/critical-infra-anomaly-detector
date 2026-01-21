@@ -1004,7 +1004,7 @@ key_plot.legend.click_policy = "hide"
 # Drill-down plot (multi-line around an alert)
 drill_plot = figure(
     title="Alert drill-down (top sensors around event window)",
-    height=320,
+    height=340,
     sizing_mode="stretch_width",
     x_axis_label="t (sec)",
     y_axis_label="raw value",
