@@ -445,7 +445,7 @@ class Scorer:
         if len(self._if_calib_features) >= 10:
             X = np.stack(self._if_calib_features, axis=0)
             self.iforest = IsolationForest(
-                n_estimators=150,
+                n_estimators=200,
                 contamination="auto",
                 random_state=self.rng_seed,
             ).fit(X)
