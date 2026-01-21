@@ -114,7 +114,7 @@ class DemoConfig:
     dt_sec: float = 0.5
 
     # rolling window used for features / temporal context
-    window_size: int = 30  # 15 seconds at 2 Hz
+    window_size: int = 30  # configurable  # 15 seconds at 2 Hz
 
     # calibration time (normal only) to fit scaling + thresholds
     calib_sec: float = 20.0
