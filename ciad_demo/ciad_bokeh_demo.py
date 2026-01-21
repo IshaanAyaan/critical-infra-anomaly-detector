@@ -134,7 +134,7 @@ class DemoConfig:
     demo_duration_sec: float = 120.0
 
     # random seed
-    seed: int = 7
+    seed: int = 42
 
 
 # -----------------------------
