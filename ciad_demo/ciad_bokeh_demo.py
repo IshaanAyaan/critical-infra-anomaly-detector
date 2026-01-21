@@ -128,7 +128,7 @@ class DemoConfig:
 
     # default thresholding
     threshold_method: str = "EVT-POT"  # or "Quantile"
-    target_fpr: float = 0.005
+    target_fpr: float = 0.01
 
     # scenario schedule length (2 minutes)
     demo_duration_sec: float = 120.0
