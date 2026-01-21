@@ -961,7 +961,7 @@ arch_div.text = build_architecture_text()
 # Plots
 score_plot = figure(
     title="Anomaly score (ensemble) with threshold",
-    height=280,
+    height=300,
     sizing_mode="stretch_width",
     x_axis_label="t (sec)",
     y_axis_label="score",
@@ -977,7 +977,7 @@ score_plot.legend.click_policy = "hide"
 
 contrib_plot = figure(
     title="Per-alert sensor contribution (explainability)",
-    height=280,
+    height=300,
     sizing_mode="stretch_width",
     x_range=SENSOR_NAMES,
     tools="pan,wheel_zoom,box_zoom,reset,save",
@@ -990,7 +990,7 @@ key_tags = ["F_OUTLET_FLOW", "P1_PRESSURE", "TANK_LEVEL", "TURBIDITY"]
 key_plot_source = ColumnDataSource(data=dict(t=[], **{k: [] for k in key_tags}))
 key_plot = figure(
     title="Key sensor telemetry (scaled)",
-    height=280,
+    height=300,
     sizing_mode="stretch_width",
     x_axis_label="t (sec)",
     y_axis_label="scaled value",
