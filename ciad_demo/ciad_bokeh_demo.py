@@ -1063,7 +1063,7 @@ def _rebuild_alert_select():
 
 def _update_drilldown_for_event(evt: AlertEvent):
     # Window around event
-    pad = 10.0
+    pad = 12.0
     t0 = max(0.0, evt.start_t - pad)
     t1 = evt.end_t + pad
 
