@@ -967,8 +967,8 @@ score_plot = figure(
     y_axis_label="score",
     tools="pan,wheel_zoom,box_zoom,reset,save",
 )
-score_plot.line("t", "ensemble", source=score_source, line_width=2, legend_label="ensemble")
-score_plot.line("t", "thr", source=score_source, line_width=2, line_dash="dashed", legend_label="threshold")
+score_plot.line("t", "ensemble", source=score_source, line_width=2.5, legend_label="ensemble")
+score_plot.line("t", "thr", source=score_source, line_width=2.5, line_dash="dashed", legend_label="threshold")
 score_plot.line("t", "graph", source=score_source, line_width=1, line_alpha=0.6, legend_label="graph-AE stub")
 score_plot.line("t", "lstm", source=score_source, line_width=1, line_alpha=0.6, legend_label="lstm-AE stub")
 score_plot.line("t", "iforest", source=score_source, line_width=1, line_alpha=0.6, legend_label="isolation forest")
@@ -997,7 +997,7 @@ key_plot = figure(
     tools="pan,wheel_zoom,box_zoom,reset,save",
 )
 for i, tag in enumerate(key_tags):
-    key_plot.line("t", tag, source=key_plot_source, line_width=2, legend_label=tag, color=Category10[10][i])
+    key_plot.line("t", tag, source=key_plot_source, line_width=2.5, legend_label=tag, color=Category10[10][i])
 key_plot.legend.location = "top_left"
 key_plot.legend.click_policy = "hide"
 
@@ -1010,7 +1010,7 @@ drill_plot = figure(
     y_axis_label="raw value",
     tools="pan,wheel_zoom,box_zoom,reset,save",
 )
-drill_plot.multi_line(xs="xs", ys="ys", legend_field="sensor", source=drill_source, line_width=2)
+drill_plot.multi_line(xs="xs", ys="ys", legend_field="sensor", source=drill_source, line_width=2.5)
 drill_plot.legend.location = "top_left"
 drill_plot.legend.click_policy = "hide"
 
