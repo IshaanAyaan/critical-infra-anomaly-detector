@@ -982,7 +982,7 @@ contrib_plot = figure(
     x_range=SENSOR_NAMES,
     tools="pan,wheel_zoom,box_zoom,reset,save",
 )
-contrib_plot.vbar(x="sensor", top="contrib", width=0.85, source=contrib_source)
+contrib_plot.vbar(x="sensor", top="contrib", width=0.8, source=contrib_source)
 contrib_plot.xaxis.major_label_orientation = 1.0
 
 # Key sensors (scaled) plot
