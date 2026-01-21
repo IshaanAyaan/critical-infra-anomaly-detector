@@ -419,7 +419,7 @@ class Scorer:
                 if_score = float(-self.iforest.score_samples(feat.reshape(1, -1))[0])
 
         # Ensemble (raw)
-        ensemble = 0.55 * graph_score + 0.30 * lstm_score + 0.15 * if_score
+        ensemble = 0.50 * graph_score + 0.35 * lstm_score + 0.15 * if_score
 
         if calibration:
             self._calib_graph.append(graph_score)
