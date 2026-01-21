@@ -117,7 +117,7 @@ class DemoConfig:
     window_size: int = 30  # configurable  # 15 seconds at 2 Hz
 
     # calibration time (normal only) to fit scaling + thresholds
-    calib_sec: float = 20.0
+    calib_sec: float = 25.0
 
     # controls alert eventization
     alert_on_consecutive: int = 3
