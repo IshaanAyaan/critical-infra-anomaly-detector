@@ -532,7 +532,7 @@ class EVTThreshold:
 
     This is intentionally compact for the demo.
     """
-    def __init__(self, calib_scores: List[float], q_u: float = 0.98):
+    def __init__(self, calib_scores: List[float], q_u: float = 0.95):
         x = np.asarray(calib_scores, dtype=np.float64) if calib_scores else np.asarray([0.0], dtype=np.float64)
         self.x = x
         self.q_u = float(q_u)
