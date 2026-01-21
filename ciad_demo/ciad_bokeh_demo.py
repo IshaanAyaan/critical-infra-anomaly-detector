@@ -1024,7 +1024,7 @@ columns = [
     TableColumn(field="scenario", title="Scenario", formatter=StringFormatter()),
     TableColumn(field="top_sensors", title="Top sensors", formatter=StringFormatter()),
 ]
-alerts_table = DataTable(source=alerts_source, columns=columns, height=240, sizing_mode="stretch_width", selectable=True, index_position=None)
+alerts_table = DataTable(source=alerts_source, columns=columns, height=220, sizing_mode="stretch_width", selectable=True, index_position=None)
 
 
 def build_alert_detail(evt: Optional[AlertEvent]) -> str:
